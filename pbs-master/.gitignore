@@ -1,0 +1,17 @@
+.idea/
+download/
+download_*/
+download*
+tmp/
+csv/
+
+# Ignore all logfiles and tempfiles.
+logs/
+!/logs/.keep
+
+__pycache__
+
+*.pyc
+*.bak
+
+config.ini
