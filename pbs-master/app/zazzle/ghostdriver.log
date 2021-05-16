@@ -1,0 +1,19 @@
+[INFO  - 2021-05-15T06:38:12.856Z] GhostDriver - Main - running on port 53075
+[INFO  - 2021-05-15T06:38:17.337Z] Session [21bc6680-b548-11eb-bd4d-b368fe84a86e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2021-05-15T06:38:17.337Z] Session [21bc6680-b548-11eb-bd4d-b368fe84a86e] - page.customHeaders:  - {}
+[INFO  - 2021-05-15T06:38:17.337Z] Session [21bc6680-b548-11eb-bd4d-b368fe84a86e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2021-05-15T06:38:17.337Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 21bc6680-b548-11eb-bd4d-b368fe84a86e
+[ERROR - 2021-05-15T06:38:21.069Z] Session [21bc6680-b548-11eb-bd4d-b368fe84a86e] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2021-05-15T06:38:21.069Z] Session [21bc6680-b548-11eb-bd4d-b368fe84a86e] - page.onError - stack:
+  defineProperty (https://www.zazzle.com/a0o07ort/init.js:2)
+  Tn (https://www.zazzle.com/a0o07ort/init.js:2)
+  Cn (https://www.zazzle.com/a0o07ort/init.js:2)
+  zn (https://www.zazzle.com/a0o07ort/init.js:2)
+  Dn (https://www.zazzle.com/a0o07ort/init.js:2)
+  _n (https://www.zazzle.com/a0o07ort/init.js:2)
+  su (https://www.zazzle.com/a0o07ort/init.js:4)
+  Ju (https://www.zazzle.com/a0o07ort/init.js:4)
+
+  phantomjs://platform/console++.js:263 in error
