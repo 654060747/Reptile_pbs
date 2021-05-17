@@ -10,7 +10,7 @@ from contextlib import closing
 
 # 需要修改的位置
 # 要搜索的关键字
-keywords = ['camper pillow']
+keywords = ['camper pillow','sofa','dog']
 # 第几页
 page = 1
 # 当前页的第几个
@@ -78,10 +78,10 @@ def DownloadImg(img_url, dir_name, img_name, folder_name):
                         f.write(data)
                     print('==========图片下载成功=========')
             except:
-                print('保存失败 \t%s' % img_url + '\n' + '失败图片已保存到"失败图片.csv"')
+                print('保存失败可能含有特殊字符 \t%s' % img_url + '\n' + '失败图片已保存到"失败图片.csv"')
                 WriteInfo(folder_name+'/'+'失败图片.csv',img_url)
     except:
-        print('图片下载失败 \t%s' % img_url + '\n' + '失败图片已保存到"失败图片.csv"')
+        print('图片下载失败可能网络问题 \t%s' % img_url + '\n' + '失败图片已保存到"失败图片.csv"')
         WriteInfo(folder_name+'/'+'失败图片.csv',img_url)
 
 
@@ -132,23 +132,23 @@ def by_img_details(url_id, key, title_name):
 			else:				
 				tag_01 = ''
 				tag_02 = ''
-		all_data = str(ID) + "," + url_img + "," + title_name + "," + tag_01 + "," + tag_02
+		all_data = ID + "," + url_img + "," + title_name + "," + tag_01 + "," + tag_02
 		txt_dir = './去重.txt'
 		if not os.path.exists(txt_dir):
 			open(txt_dir,'w')
 		f = open(txt_dir)
 		txt_file = f.read()
 		f.close()
-		if str(ID) not in txt_file:
+		if ID not in txt_file:
 			folder_name = "./" + key
 			CheckDir(folder_name)
 			file_dir = folder_name + "/" + "data.csv"
 			WriteInfo(file_dir,all_data)
 			img_dir =  folder_name + '/' + 'img'
 			CheckDir(img_dir)
-			img_name = '01'+title_name + '.jpg'
+			img_name = ID + '.jpg'
 			DownloadImg(url_img,img_dir,img_name,folder_name)
-			WriteInfo(txt_dir,str(ID))
+			WriteInfo(txt_dir,ID)
 		else:
 			print("数据已存在")
 
