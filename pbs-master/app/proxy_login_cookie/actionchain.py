@@ -32,7 +32,9 @@ driver.maximize_window()
 driver.find_element_by_xpath(r'//*[@id="forget-step1"]/div[1]/div/span[1]/span/input').send_keys('362427199010230317')
 time.sleep(0.5)
 driver.find_element_by_xpath(r'//*[@id="forget-step1"]/div[2]/button[1]').click()
-time.sleep(1)
+# time.sleep(1)
+# selenium自身的灵活等待时间
+driver.implicitly_wait(10)
 
 # 首先截取当前页面的全图
 driver.save_screenshot('./01.png')
