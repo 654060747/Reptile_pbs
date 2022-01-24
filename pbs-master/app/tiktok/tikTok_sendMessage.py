@@ -230,8 +230,8 @@ def by_tiktok(url):
 
 if __name__ == '__main__':
 	# 登录邮箱、密码
-	name = 'bd@ucom18.com'
-	password = 'sdskj123-'
+	name = 'xxxxxxx'
+	password = 'xxxxxx'
 
 	# 粉丝数目最小值、最大值、搜索间隔值,每5万做一次搜索（5万这个数值后期可以修改）
 	etc_mix_count = 200000
@@ -247,8 +247,8 @@ if __name__ == '__main__':
 
 	# 邀请联系方式
 	code = "44"
-	wtatsapp = "07803779992"
-	email = "bd@lemonttt.com"
+	wtatsapp = "xxxxxxxx"
+	email = "xxxxxx"
 
 
 	# 滑动距离(代码关联不修改)
