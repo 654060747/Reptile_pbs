@@ -172,9 +172,9 @@ def by_tiktok(url):
 
 if __name__ == '__main__':
 	# 登录邮箱
-	name = 'bd@ucom18.com'
+	name = 'xxxx'
 	# 登录密码
-	password = 'sdskj123-'
+	password = 'xxxx'
 	# 滑动计数使用
 	i = 0
 	# 滑动距离
